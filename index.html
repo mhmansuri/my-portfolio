@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title> Mohammad Husain Mansuri · Product engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+  <a class="brand" href="#top">Mohammad Husain Mansuri</a>
+  <ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+  <button id="theme" type="button" aria-label="Switch colour theme">◐</button>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <h1 id="name" aria-label="Mohammad Husain Mansuri"></h1>
+  <p class="lead rise d1">I'm a product engineer who designs and builds <mark>fast, friendly web apps</mark> from first sketch to launch.</p>
+  <div class="actions rise d2">
+    <a class="btn primary" href="#projects">See my work</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+  <p class="hint rise d2">Move your cursor (or finger) across my name.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>About me</h2>
+    <p>I'm Mohammad Husain, a full-stack developer with six years of experience building products people use every day. I care about clear interfaces, accessible code, and shipping work that's easy for the next person to maintain.</p>
+    <p>Lately I've been leading front-end work for small teams, mentoring junior developers, and turning rough ideas into prototypes within a week.</p>
+    <p class="muted">Outside of work: trail running, film photography, and a never-ending sourdough experiment.</p>
+  </div>
+  <ul class="facts" aria-label="Experience">
+    <li><b>2024–now</b><span>Senior engineer, Northwind Labs</span></li>
+    <li><b>2021–24</b><span>Front-end engineer, Brightpath</span></li>
+    <li><b>2019–21</b><span>Junior developer, Studio Fern</span></li>
+    <li><b>2019</b><span>B.Sc. Computer Science</span></li>
+  </ul>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="muted">Select a skill to see which projects used it.</p>
+  <div class="skills" id="skillGroups"></div>
+  <div id="status" role="status" aria-live="polite"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div id="projectList"></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div>
+    <h2>Let's work together</h2>
+    <p>Have a project, a role, or just a question? Send a note and I'll reply within two working days.</p>
+    <ul class="links">
+      <li><a href="mailto:hello@mohammadhusainmansuri.dev">hello@mohammadhusainmansuri.dev</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+  <form id="form">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Message<textarea name="msg" rows="5" required></textarea></label>
+    <button class="btn primary" type="submit">Send message</button>
+    <p id="formNote" class="muted" role="status" style="margin:0"></p>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Mohammad Husain Mansuri. Built by hand with HTML, CSS and a little JavaScript.</div></footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
