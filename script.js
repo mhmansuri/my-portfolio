@@ -23,7 +23,7 @@ function weigh(x,y){
   for(const l of letters){
     const r=l.getBoundingClientRect();
     const d=Math.hypot(x-(r.left+r.width/2),y-(r.top+r.height/2));
-    const w=Math.max(200,Math.min(800,800-d*2.2));
+    const w=Math.max(200,Math.min(800,800-d*2.2));  
     l.style.setProperty("--w",Math.round(w));
   }
 }
